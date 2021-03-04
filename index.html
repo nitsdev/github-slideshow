@@ -1,13 +1,154 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Book Store</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<div id="container">
+	<div id="menu">
+    	<ul>
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="subpage.html">Search</a></li>
+            <li><a href="subpage.html">Books</a></li>            
+            <li><a href="subpage.html">New Releases</a></li>  
+            <li><a href="#">Company</a></li> 
+            <li><a href="ContactUs.html">Contact</a></li>
+    	</ul>
+    </div> <!-- end of menu -->
+    
+    <div id="header">
+    	<div id="special_offers">
+        	<p>
+                <span>25%</span> discounts for
+        purchase over $80
+        	</p>
+			<a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+        
+        
+        <div id="new_books">
+        	<ul>
+                <li>Suspen disse</li>
+                <li>Maece nas metus</li>
+                <li>In sed risus ac feli</li>
+            </ul>
+            <a href="subpage.html" style="margin-left: 50px;">Read more...</a>
+        </div>
+    </div> <!-- end of header -->
+    
+    <div id="content">
+    	
+        <div id="content_left">
+        	<div class="content_left_section">
+            	<h1>Categories</h1>
+                <ul>
+                    <li><a href="subpage.html">Donec accumsan urna</a></li>
+                    <li><a href="subpage.html">Proin vulputate justo</a></li>
+                    <li><a href="#">In sed risus ac feli</a></li>
+                    <li><a href="#">Aliquam tristique dolor</a></li>
+                    <li><a href="#">Maece nas metus</a></li>
+                    <li><a href="#">Sed pellentesque placerat</a></li>
+                    <li><a href="#">Suspen disse</a></li>
+                    <li><a href="#">Maece nas metus</a></li>
+                    <li><a href="#">In sed risus ac feli</a></li>
+            	</ul>
+            </div>
+			<div class="content_left_section">
+            	<h1>Bestsellers</h1>
+                <ul>
+                    <li><a href="#">Vestibulum ullamcorper</a></li>
+                    <li><a href="#">Maece nas metus</a></li>
+                    <li><a href="#">In sed risus ac feli</a></li>
+                    <li><a href="#">Praesent mattis varius</a></li>
+                    <li><a href="#">Maece nas metus</a></li>
+                    <li><a href="#">In sed risus ac feli</a></li>
+                    <li><a href="#">Flash Templates</a></li>
+                    <li><a href="#">CSS Templates</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#" target="_parent">Free Photos</a></li>
+            	</ul>
+            </div>
+            
+            <div class="content_left_section">                
+               
+			</div>
+        </div> <!-- end of content left -->
+        
+        <div id="content_right">
+        	<div class="product_box">
+            	<h1>Photography  <span>(by Best Author)</span></h1>
+   	      <img src="images/image_01.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Etiam luctus. Quisque facilisis suscipit elit. Curabitur...</p>
+                  <h3>$55</h3>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="product_box">
+            	<h1>Cooking  <span>(by New Author)</span></h1>
+       	    <img src="images/image_02.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Aliquam a dui, ac magna quis est eleifend dictum.</p>
+                    <h3>$35</h3>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+            
+            <div class="product_box">
+            	<h1>Gardening <span>(by Famous Author)</span></h1>
+   	      <img src="images/image_03.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Ut fringilla enim sed turpis. Sed justo dolor, convallis at.</p>
+                    <h3>$65</h3>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_width">&nbsp;</div>
+            
+            <div class="product_box">
+            	<h1>Sushi Book  <span>(by Japanese Name)</span></h1>
+            	<img src="images/image_04.jpg" alt="image" />
+                <div class="product_info">
+                	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3>$45</h3>
+                    <div class="buy_now_button"><a href="subpage.html">Buy Now</a></div>
+                    <div class="detail_button"><a href="subpage.html">Detail</a></div>
+                </div>
+                <div class="cleaner">&nbsp;</div>
+            </div>
+            
+            <div class="cleaner_with_height">&nbsp;</div>
+            
+            <a href="subpage.html"><img src="images/ads.jpg" alt="ads" /></a>
+        </div> <!-- end of content right -->
+    
+    	<div class="cleaner_with_height">&nbsp;</div>
+    </div> <!-- end of content -->
+    
+    <div id="footer">
+    
+	       <a href="subpage.html">Home</a> | <a href="subpage.html">Search</a> | <a href="subpage.html">Books</a> | <a href="#">New Releases</a> | <a href="#">FAQs</a> | <a href="ContactUs.html">Contact Us</a><br />
+        Copyright © 2024 <a href="#"><strong> Company Name</strong></a> 
+        	</div> 
+    <!-- end of footer -->
+</div> <!-- end of container -->
+
+</body>
+</html>
